@@ -3,5 +3,6 @@ body {
 }
 
 .bar {
-  background: -webkit-linear-gradient(0deg, #00FFFF, #0000FF)
+  background: -webkit-linear-gradient(0deg, #00FFFF, #0000FF);
+  height: 50px;
 }
