@@ -3,6 +3,18 @@ body {
 }
 
 .bar {
-  background-image: linear-gradient(0deg, #00FFFF, #0000FF);
-  height: 50px;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color:#fff;
+    font-size:22px;
+    text-align:center;
+      box-shadow:0 0 4px #006699;
+    width:100%;
+    top:-3.5%;
+    text-transform:uppercase;
+   left:-1%;
+    border-radius:5px;  
+    height:50px;
+    font-size:21px;
+    position:fixed;
+    font-family:Almendra SC;
 }
