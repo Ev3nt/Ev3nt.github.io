@@ -6,6 +6,7 @@ body {
 }
 			
 .body {
+	color: white;
 	float: left;
 	padding-left: 15%;
 	margin-bottom: 0;
@@ -16,7 +17,6 @@ body {
 }
 
 .Main {
-	font-color: white;
 	padding-top: 50px;
 	height: 100%;
 	width: 70%;
@@ -28,7 +28,7 @@ body {
 .bar {
 	font-family: Lucida Bright;
 	overflow: hidden;
-    position: fixed;
+   	position: fixed;
 	font-size: 200%;
 	padding: 0;
 	top: 0;
