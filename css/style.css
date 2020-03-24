@@ -13,10 +13,10 @@ body {
 	padding-bottom: 30px;
 	height: 100%;
 	width: 100%;
-	font-color: white;
 }
 
 .Main {
+	font-color: white;
 	padding-top: 50px;
 	height: 100%;
 	width: 70%;
