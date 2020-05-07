@@ -1,8 +1,13 @@
 html, body {
-	font-family: Arial;
+	/* font-family: Comic Sans MS; */
+	font-family: arial;
 	background-color: black;
 	margin: 0px;
 	overflow: hidden;
+}
+
+* {
+	color: #00E6F4;
 }
 
 html {
@@ -18,13 +23,13 @@ html::-webkit-scrollbar {
 }
 
 .navbar {
+	font-weight: 800;
 	padding-left: 10px;
 	box-shadow: 0 0 50px black;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	font-size: 30px;
-	color: #00E6F4;
 	position: fixed;
 	width: 100%;
 	height: 100px;
@@ -33,14 +38,15 @@ html::-webkit-scrollbar {
 }
 
 .navicon {
-	background-image: url("../img/MM Engine Noborders.png");
+	background-image: url("../MM Engine Noborders.png");
 	background-size: cover;
 	width: 64px;
 	height: 64px;
 }
 
 .main {
-	color: #AAFFEB;
+	/* color: #FF00FF; */
+	/* color: #AAFFEB; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -54,20 +60,48 @@ html::-webkit-scrollbar {
 	width: 900px;
 	height: 800px;
 	background-color: #222222;
-	border: 3px solid #00E6F4;
+	border: 3px solid;
 	border-radius: 8px;
 	margin-top: 10px;
 }
 
 .bottom {
-	padding-top: 30px;
+	/* padding-top: 30px; */
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 	color: #666666;
 	border-top: 2px solid #333333;
 	background-color: #222222;
 	height: 200px;
+}
+
+#adminbutton {
+	margin-left: 70%;
+}
+
+.adminpanel {
+	border: 3px solid;
+	border-radius: 8px;
+	background-color: #222222;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	height: 50px;
+	width: 200px;
+}
+
+#adminname {
+	margin-left: 5px;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+#adminicon {
+	height: 50px;
+	width: 50px;
+	background-size: cover;
 }
 
 .iconbar {
