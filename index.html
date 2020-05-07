@@ -2,17 +2,36 @@
 <html>
 <head>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" href="img/MM Engine.png" type="image/x-icon">
+	<link rel="shortcut icon" href="MM Engine.png" type="image/x-icon">
 	<title>MM Engine</title>
+
+	<script type="text/javascript">
+	var script = document.createElement('SCRIPT');
+	script.src = "https://api.vk.com/method/users.get?user_ids=" + 256502931 + "&fields=photo_max&v=5.103&access_token=8b88debf8b88debf8b88debfb48bf965b988b888b88debfd53b2dd5d257f25e89888a09&callback=callbackFunc";
+	document.getElementsByTagName("head")[0].appendChild(script);
+	function callbackFunc(result) {
+		document.getElementById("adminbutton").href = "https://vk.com/id" + result.response[0].id;
+		document.getElementById("adminicon").style.backgroundImage = "url(" + result.response[0].photo_max + ")";
+		document.getElementById("adminname").innerHTML = result.response[0].first_name + " " + result.response[0].last_name;
+	}
+	</script>
+
 </head>
 <body>
 	<div class="navbar">
 		<div class="navicon"></div>
 		MM Engine
+		<a id="adminbutton" href="">
+			<div class="adminpanel">
+				<div id="adminicon"></div>
+				<span id="adminname">Admin</span>
+			</div>
+		</a>
 	</div>
 	<div class="main">
 		<div class="block">Hello Dude
 			How are u?
+			Привет, как дела
 		</div>
 		<div class="block"></div>
 	</div>
